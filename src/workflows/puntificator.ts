@@ -98,7 +98,7 @@ export class PuntificatorWorkflow extends WorkflowEntrypoint<Env, PuntificatorPa
             }
 			if (toolCall.arguments.rating === undefined || toolCall.arguments.rating < 8) {
 				throw new NonRetryableError(
-					`Rating was ${toolCall.arguments.rating} for ${toolCall.arguments.pun} with feedback: ${toolCall.arguments.feedback}`
+					`Rating was ${toolCall.arguments.rating} for ${createdPun} with feedback: ${toolCall.arguments.feedback}`
 				);
 			}
 			return toolCall.arguments;

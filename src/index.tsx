@@ -174,14 +174,9 @@ app.post("/api/puns", async (c) => {
   return c.json({ workflow });
 });
 
-app.get("/api/puns/mine", async (c) => {
-  const createdResponse = await c.env.DB.prepare(
-    `SELECT * FROM puns WHERE creator=? ORDER BY created_at DESC`
-  )
-    .bind(c.get("userId"))
-    .all();
-  const liked = await getLikedPunsForUser(c);
-  return c.json({ created: createdResponse.results, liked: liked });
+app.get("/api/puns/trending", async (c) => {
+  const trendingJSON = await c.env.LEADERBOARD.get("trending");
+  return c.json(JSON.parse(trendingJSON));
 });
 
 app.get("/api/puns/search", async (c) => {
@@ -203,6 +198,12 @@ app.get("/api/puns/search", async (c) => {
     .map((r) => r?.metadata?.punId) as Array<string>;
   const puns = await punsByIds(c, ids);
   return c.json({ results: puns });
+});
+
+app.get('/api/puns/mine', async (c) => {
+	const createdResponse = await c.env.DB.prepare(`SELECT * FROM puns WHERE creator=? ORDER BY created_at DESC`).bind(c.get('userId')).all();
+	const liked = await getLikedPunsForUser(c);
+	return c.json({ created: createdResponse.results, liked: liked });
 });
 
 app.get("/api/puns/:punId", async (c) => {

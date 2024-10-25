@@ -9,6 +9,9 @@ It was built with 🧡 on the [Cloudflare Stack](https://www.youtube.com/watch?v
 
 [<img src="https://img.youtube.com/vi/slS4RBV0SBk/0.jpg">](https://youtu.be/slS4RBV0SBk "Cloudflare Workflows: The Newest Developer Platform Primitive at Cloudflare")
 
+[<img src="https://img.youtube.com/vi/y4PPsvHrQGA/0.jpg">](https://youtu.be/y4PPsvHrQGA "Cloudflare Workflows: Batching and Monitoring your Durable Execution")
+
+y4PPsvHrQGA
 
 ## Setup
 
