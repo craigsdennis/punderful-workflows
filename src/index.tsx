@@ -5,7 +5,7 @@ import { jsxRenderer } from "hono/jsx-renderer";
 import { PublishWorkflow } from "./workflows/publish";
 import { InteractionWorkfow } from "./workflows/interaction";
 import { PuntificatorWorkflow } from "./workflows/puntificator";
-import { LeaderboardWorkfow } from "./workflows/leaderboard";
+import { LeaderboardWorkflow } from "./workflows/leaderboard";
 import Home from "./pages/Home";
 import New from "./pages/New";
 import Me from "./pages/Me";
@@ -16,7 +16,7 @@ export {
   PublishWorkflow,
   InteractionWorkfow,
   PuntificatorWorkflow,
-  LeaderboardWorkfow,
+  LeaderboardWorkflow,
 };
 
 // Hono c variables

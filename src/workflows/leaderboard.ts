@@ -3,7 +3,7 @@ import { WorkflowEntrypoint, WorkflowEvent, WorkflowStep } from 'cloudflare:work
 
 export type LeaderboardParams = {};
 
-export class LeaderboardWorkfow extends WorkflowEntrypoint<Env, LeaderboardParams> {
+export class LeaderboardWorkflow extends WorkflowEntrypoint<Env, LeaderboardParams> {
 	async run(event: WorkflowEvent<LeaderboardParams>, step: WorkflowStep) {
 		const trendingResultsJSON = await step.do('gather-trending-posts', async() => {
 			// Imagine something way more gnarlier than this
