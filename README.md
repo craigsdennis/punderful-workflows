@@ -11,7 +11,10 @@ It was built with 🧡 on the [Cloudflare Stack](https://www.youtube.com/watch?v
 
 [<img src="https://img.youtube.com/vi/y4PPsvHrQGA/0.jpg">](https://youtu.be/y4PPsvHrQGA "Cloudflare Workflows: Batching and Monitoring your Durable Execution")
 
-y4PPsvHrQGA
+[<img src="https://img.youtube.com/vi/L6gR4Yr3UW8/0.jpg">](https://youtu.be/L6gR4Yr3UW8 "Schedule and Sleep For Your Apps with Durable Workflow Execution a.k.a Cloudflare Workflows #ai")
+
+
+
 
 ## Setup
 
