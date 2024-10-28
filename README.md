@@ -59,6 +59,16 @@ npx wrangler@workflows kv namespace create LEADERBOARD
 
 Copy and Paste the returned value and replace it in [wrangler.toml](./wrangler.toml)
 
+### AI Gateway
+
+The Workers AI calls that I do in this app pass through an AI Gateway named `punderful`. This let's me log and monitor of all AI usage.
+
+Here is a link to your [AI Gateway](https://dash.cloudflare.com/?to=/:account/ai/ai-gateway/general) in dashboard.
+
+Or head over to [Dash](https://dash.cloudflare.com) > Your Account > AI > AI Gateway
+
+Click the ➕ sign to create a new Gateway and name it `punderful`.
+
 ### Optional: OpenAI
 
 Moderation is available using the free OpenAI the PublishWorkflow. You will need an OpenAI API Key to use it.
